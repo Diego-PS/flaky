@@ -4,9 +4,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "concurrency": "node ./src/concurrency/index.js",
+    "randomness": "node ./src/randomness/index.js",
+    "wait": "node ./src/wait/index.js",
+    "order": "node ./src/order/index.js",
+    "time": "node ./src/time/index.js",
     "test": "jest",
-    "concurrency": "bash ./concurrency/script.sh",
-    "randomness": "bash ./randomness/script.sh"
+    "flaky:concurrency": "bash flaky.sh concurrency",
+    "flaky:randomness": "bash flaky.sh randomness",
+    "flaky:wait": "bash flaky.sh wait",
+    "flaky:order": "bash flaky.sh order",
+    "flaky:time": "bash flaky.sh time"
   },
   "keywords": [],
   "author": "",
